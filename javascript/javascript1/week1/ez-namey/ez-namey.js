@@ -11,6 +11,7 @@ const firstWords = [
     "Empatthetic",
     "Scalable"
 ];
+
 const secondWords = [
     "Evolving",
     "Balancing Positivity & Realism",
@@ -25,12 +26,10 @@ const secondWords = [
     "Fast-Paced"
 ];
 
-const startupName = "NouGol"; // First letters of my first and last name ;)
+const randomfirstWord = firstWords [Math.floor(Math.random() * 10)];
+const randomsecondWord = secondWords[Math.floor(Math.random() * 10)];
 
-
-const randomFirst = Math.floor(Math.random() * 10);
-const randomSecond = Math.floor(Math.random() * 10);
-
+const startupName = randomfirstWord + " " + randomsecondWord;
 
 console.log("The startup: " + startupName + " contains " + (startupName.length) + " characters.");
 

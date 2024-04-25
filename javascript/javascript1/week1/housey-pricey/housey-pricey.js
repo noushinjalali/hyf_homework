@@ -1,21 +1,36 @@
 
 
-name = "Peter";
-const volumeInMetersPeter = (8 * 10 * 10);
+// Peter
+const widthInMetersPeter = 8;
+const depthInMetersPeter = 10;
+const heightInMetersPeter = 10;
 const gardenSizeInM2Peter = 100;
-housePrice = (volumeInMetersPeter * 2.5 * 1000 + gardenSizeInM2Peter * 300);
 
-console.log("Peter paid 2.500.000 while based on the above calculation the house price is " + housePrice + ". So, he paid too much. :\ ")
+const volumeInMetersPeter = (widthInMetersPeter * depthInMetersPeter * heightInMetersPeter);
+let housePricePeter = (volumeInMetersPeter * 2.5 * 1000 + gardenSizeInM2Peter * 300);
+const petersPaidPrice = 2500000;
 
+if (petersPaidPrice <= housePricePeter) {
+    console.log("Peter purchased the house with a good price");
+} else {
+    console.log("Peter purchased the house with a bad price");
+}
 
-
-name = "Julia";
-const volumeInMetersJulia = (5 * 11 * 8);
+// Julia
+const widthInMetersJulia = 5;
+const depthInMetersJulia = 11;
+const heightInMetersJulia = 8;
 const gardenSizeInM2Julia = 70;
-housePrice = (volumeInMetersJulia * 2.5 * 1000 + gardenSizeInM2Julia * 300);
 
-console.log("Julia is paid 1,000,000 for her new house while based on the above calculation the house price is " + housePrice + ". So, she had made a good deal.  ;)")
+const volumeInMetersJulia = (widthInMetersJulia * depthInMetersJulia * heightInMetersJulia);
+let housePriceJulia = (volumeInMetersJulia * 2.5 * 1000 + gardenSizeInM2Julia * 300);
+const juliasPaidPrice = 1000000;
 
+if (juliasPaidPrice <= housePriceJulia) {
+    console.log("Julia purchased the house with a good price");
+} else {
+    console.log("Julia purchased the house with a bad price");
+}
 
 
 
