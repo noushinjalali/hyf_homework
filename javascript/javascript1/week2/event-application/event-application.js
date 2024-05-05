@@ -1,10 +1,9 @@
 function getEventWeekday(daysFromToday) {
-    let today = new Date();
 
-    let futureDate = new Date(today);
-    futureDate.setDate(today.getDate() + daysFromToday);
+    const futureDate = new Date();
+    futureDate.setDate(futureDate.getDate() + daysFromToday);
 
-    let weekdayIndex = futureDate.getDay();
+    const weekdayIndex = futureDate.getDay();
 
     const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
